@@ -1761,7 +1761,7 @@ blockquote {
   border: none;
   padding: 0;
 }
-blockquote p {
+blockquote pre {
   background: #e6e6e6;
   padding: 20px;
   -webkit-border-radius: 3px;
@@ -1769,8 +1769,8 @@ blockquote p {
   border-radius: 3px;
   position: relative;
 }
-blockquote p:after,
-blockquote p:before {
+blockquote pre:after,
+blockquote pre:before {
   top: 100%;
   border: solid transparent;
   content: " ";
@@ -1779,13 +1779,13 @@ blockquote p:before {
   position: absolute;
   pointer-events: none;
 }
-blockquote p:after {
+blockquote pre:after {
   border-top-color: #e6e6e6;
   border-width: 10px;
   left: 10%;
   margin-left: -10px;
 }
-blockquote p:before {
+blockquote pre:before {
   border-top-color: rgba(0, 0, 0, 0.01);
   border-width: 11px;
   left: 10%;

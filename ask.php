@@ -17,13 +17,14 @@ $defaults = array(
             <div class="bar" data-bind="style:{width : progress()+'%'}" style="width: 0%;"></div>
         </div>
         <div data-bind="foreach: conversations">
-            <div data-bind="attr : {class: 'alert alert-'+ type }">
-                <span class="close" data-dismiss="alert">&times;</span>
+            <div data-bind="attr : {class: name + '  fade in alert alert-block alert-'+type }">
+                <span class="close" data-dismiss="fade">&times;</span>
                 <blockquote>
-                    <p data-bind='text : ""+message+""' class='fancy'></p>
+                    <pre data-bind="text : message"></pre>
                     <small><img data-bind="attr:{src : img, alt : name }" class="img-circle"> <span class="spacer">/</span> <a href="#" data-bind="html : name"></a></small>
                 </blockquote>
             </div>
+            <hr>
         </div>
     </div>
 </div>

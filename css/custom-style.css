@@ -92,3 +92,24 @@
     height: 35px;
     font-size: 30px;
 }
+
+
+.Oracle blockquote pre:after,
+.Oracle blockquote pre:before{
+    left : 5%;
+}
+
+.You blockquote small{
+    text-align: right;
+}
+
+.You blockquote small span,.You blockquote small img{
+    float: right;
+}
+.You blockquote small span{
+    margin-left: 3px;
+}
+.You blockquote pre:after,
+.You blockquote pre:before{
+    left : 95% !important;
+}
