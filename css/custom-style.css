@@ -1,7 +1,7 @@
 /*/////////////////////////////////////////////////////////////////////
  // 
  // Custom theme code styles
- // Written by Themelize.me (http://themelize.me)
+ // Written by Themelize.me (index.php)
  // 
  // This is an empty starter template for overriding styles
  // set by Bootstrap & the theme
@@ -31,19 +31,19 @@
  *--------------------------------------------------
  */
 #navigation {
-  /* 1. Navigation wrapper */
+    /* 1. Navigation wrapper */
 }
 #highlighted {
-  /* 2. Highlighted (below header) wrapper */
+    /* 2. Highlighted (below header) wrapper */
 }
 #content {
-  /* 3. Content wrapper */
+    /* 3. Content wrapper */
 }
 #content-below {
-  /* 4. Content Below wrapper */
+    /* 4. Content Below wrapper */
 }
 #footer {
-  /* 5. Footer wrapper */
+    /* 5. Footer wrapper */
 }
 /*
  * --------------------------------------------------
@@ -56,25 +56,25 @@
  *--------------------------------------------------
  */
 @media (max-width: 979px) {
-  /* Navbar Collapsed (mobile) */
+    /* Navbar Collapsed (mobile) */
 }
 @media (min-width: 980px) {
-  /* Navbar Expanded (desktop) */
+    /* Navbar Expanded (desktop) */
 }
 @media (min-width: 1200px) {
-  /* Responsive: Large desktop and up (wide) */
+    /* Responsive: Large desktop and up (wide) */
 }
 @media (max-width: 979px) {
-  /* Responsive: Mobile to desktop (common for all narrow devices) */
+    /* Responsive: Mobile to desktop (common for all narrow devices) */
 }
 @media (min-width: 768px) and (max-width: 979px) {
-  /* Responsive: Tablet to desktop (normal) */
+    /* Responsive: Tablet to desktop (normal) */
 }
 @media (max-width: 767px) {
-  /* Responsive: Landscape phone to desktop/tablet (narrow) */
+    /* Responsive: Landscape phone to desktop/tablet (narrow) */
 }
 @media (max-width: 480px) {
-  /* Responsive: Up to Landscape phone (mobile) */
+    /* Responsive: Up to Landscape phone (mobile) */
 }
 /*
  * --------------------------------------------------
@@ -82,3 +82,13 @@
  * Other stuff
  *--------------------------------------------------
  */
+.form-search .add-on{
+    font-size: 30px;
+    padding: 9px;
+    height: 25px;
+}
+
+.form-search input{
+    height: 35px;
+    font-size: 30px;
+}
