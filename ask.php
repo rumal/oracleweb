@@ -9,9 +9,6 @@ $defaults = array(
 <?php include_once './includes/header.php'; ?>
 <div id="content">
     <div class="container">
-        <h1>Ask a question from Oracle</h1>
-        <p class="lead fancy">You can ask any question you would ask from Oracle here. It will give the same answer you would get from the mobile application. </p>
-
         <?php include_once './includes/search.php'; ?>
         <div class="progress progress-striped active">
             <div class="bar" data-bind="style:{width : progress()+'%'}" style="width: 0%;"></div>

@@ -1,5 +1,6 @@
 <?php
 $header = "Home";
+$nav = true;
 ?>
 <?php include_once './includes/header.php'; ?>
 <div class="hero" id="highlighted">
@@ -36,7 +37,10 @@ $header = "Home";
 
 <div id="content">
     <div class="container">
-        <?php include_once './includes/search.php'; ?>
+        <div class="block features">
+            <h2 class="title-divider"><span>Experience <span class="de-em">the power</span></span> <small>Same engine is used in both the mobile application and the website.</small></h2>
+            <?php include_once './includes/search.php'; ?>
+        </div>
         <!-- Services -->
         <div class="block features">
             <h2 class="title-divider"><span>Core <span class="de-em">Features</span></span> <small>Core features included in all plans.</small></h2>

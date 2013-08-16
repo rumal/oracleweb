@@ -155,14 +155,16 @@ var QA = function QnA() {
         query: ko.observable(defaults.query),
         progress: ko.observable(defaults.progress),
         conversations: ko.observableArray([
-            {name: "Oracle", message: "hi", img: "img/team/jimi.jpg", type: "success"},
-            {name: "You", message: "hi", img: "img/team/bono.jpg", type: ""}
+//            {name: "Oracle", message: "hi", img: "img/team/jimi.jpg", type: "success"},
+//            {name: "You", message: "hi", img: "img/team/bono.jpg", type: ""}
         ]),
         ask: function() {
-            this.conversations.unshift({name: "You", img: "img/team/bono.jpg", message: this.query(),  type: ""});
+            this.conversations.unshift({name: "You", img: "img/team/bono.jpg", message: this.query(), type: ""});
+            QA.progress(40);
             $.post('askOracle.php',
                     {q: this.query()},
             function(data) {
+                QA.progress(100);
                 QA.conversations.unshift({name: "Oracle", message: data.response, img: "img/team/jimi.jpg", type: data.status});
             }, "json");
             return false;
